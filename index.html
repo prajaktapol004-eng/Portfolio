@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO & Recruiter Discovery Metadata -->
+  <title>Prajakta Pol | Aspiring PLC & Industrial Automation Engineer | Pune Portfolio</title>
+  <meta name="description" content="Professional portfolio of Prajakta Pol - Electronics & Telecommunication graduate (B.Tech 8.25 CGPA, PGDIA Completed) specializing in PLC Automation, Siemens & Allen-Bradley systems, industrial sensors, and embedded instrumentation. Seeking entry-level Automation Engineer roles in Pune, Maharashtra." />
+  <meta name="keywords" content="Prajakta Pol, PLC Engineer, Industrial Automation Fresher, Siemens PLC, Allen-Bradley, Control Systems Engineer, Instrumentation, PGDIA, Pune Automation Jobs, B.Tech ETC" />
+  <meta name="author" content="Prajakta Pol" />
+
+  <!-- OpenGraph Metadata -->
+  <meta property="og:title" content="Prajakta Pol | Aspiring PLC & Industrial Automation Engineer" />
+  <meta property="og:description" content="Portfolio of Prajakta Pol - Specializing in PLC ladder logic, industrial sensors, control panels, and embedded IoT. Open to entry-level roles in Pune, India." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/profile-placeholder.svg" />
+
+  <!-- Favicon PP -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            industrial: {
+              950: '#070b14',
+              900: '#0b1120',
+              850: '#0d1527',
+              800: '#0f172a',
+              700: '#1e293b',
+              600: '#334155',
+              500: '#475569'
+            },
+            electric: {
+              400: '#38bdf8',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1'
+            },
+            cyanic: {
+              400: '#22d3ee',
+              500: '#06b6d4',
+              600: '#0891b2'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Industrial Theme Stylesheet -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!-- Structured Data Schema for Recruiters -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Prajakta Pol",
+    "jobTitle": "Aspiring PLC & Industrial Automation Engineer",
+    "email": "polprajakta07@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Pune",
+      "addressRegion": "Maharashtra",
+      "addressCountry": "India"
+    },
+    "alumniOf": [
+      {
+        "@type": "EducationalOrganization",
+        "name": "N. B. Navale Sinhgad College of Engineering"
+      }
+    ],
+    "knowsAbout": [
+      "PLC Programming",
+      "Siemens S7",
+      "Allen-Bradley RSLogix",
+      "Ladder Logic",
+      "Industrial Sensors",
+      "Electrical Control Panels",
+      "Embedded Systems",
+      "ESP32"
+    ]
+  }
+  </script>
+</head>
+
+<body class="bg-industrial-900 text-slate-100 antialiased selection:bg-electric-500 selection:text-white">
+
+  <!-- ================================================================
+       TOP NAVIGATION BAR
+       ================================================================ -->
+  <header id="main-header" class="nav-header fixed top-0 left-0 right-0 z-50 py-3.5 px-4 sm:px-8 border-b border-industrial-700/40 bg-industrial-900/80 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      
+      <!-- Brand Logo / Initials -->
+      <a href="#hero" class="flex items-center gap-3 group text-decoration-none">
+        <div class="w-10 h-10 rounded-lg bg-industrial-800 border border-electric-500/40 flex items-center justify-center chip-glow group-hover:border-electric-400 transition-all">
+          <span class="font-mono font-black text-sm text-electric-400 tracking-tighter">PP</span>
+        </div>
+        <div>
+          <span class="text-base font-black tracking-wider text-white uppercase block leading-tight">Prajakta Pol</span>
+          <span class="text-[10px] font-mono text-cyanic-400 tracking-widest block uppercase">Automation &bull; Control</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-6 text-xs font-medium text-slate-300">
+        <a href="#about" class="nav-link hover:text-electric-400 transition-colors">About</a>
+        <a href="#education" class="nav-link hover:text-electric-400 transition-colors">Education</a>
+        <a href="#skills" class="nav-link hover:text-electric-400 transition-colors">Skills</a>
+        <a href="#projects" class="nav-link hover:text-electric-400 transition-colors">Projects</a>
+        <a href="#practice" class="nav-link hover:text-electric-400 transition-colors">PLC Practice</a>
+        <a href="#experience" class="nav-link hover:text-electric-400 transition-colors">Experience</a>
+        <a href="#achievements" class="nav-link hover:text-electric-400 transition-colors">Awards</a>
+        <a href="#resume" class="nav-link hover:text-electric-400 transition-colors">Resume</a>
+      </nav>
+
+      <!-- Desktop Actions (Theme Toggle & Contact CTA) -->
+      <div class="hidden sm:flex items-center gap-3">
+        <!-- Dark / Light Mode Switcher -->
+        <button class="theme-toggle-btn p-2 px-3 rounded-lg bg-industrial-800 hover:bg-industrial-700 border border-industrial-600 transition-colors flex items-center gap-2 text-xs font-mono" title="Toggle Dark / Light Mode">
+          <span class="theme-toggle-icon flex items-center"></span>
+          <span class="theme-toggle-label text-slate-300">Dark Mode</span>
+        </button>
+
+        <a href="#contact" class="btn-primary text-xs py-2 px-4">
+          Contact Me
+        </a>
+      </div>
+
+      <!-- Mobile Right Controls (Theme Toggle & Hamburger) -->
+      <div class="flex items-center gap-2 lg:hidden">
+        <button class="theme-toggle-btn p-2 rounded-lg bg-industrial-800 text-slate-300 hover:text-white border border-industrial-600 transition-colors flex items-center" title="Toggle Dark / Light Mode">
+          <span class="theme-toggle-icon flex items-center"></span>
+        </button>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <button id="mobile-menu-toggle" aria-label="Toggle navigation menu" class="p-2 rounded-lg bg-industrial-800 text-slate-300 hover:text-white border border-industrial-600">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-nav-menu" class="hidden lg:hidden pt-4 pb-3 border-t border-industrial-700/60 mt-3 px-2 flex flex-col gap-2.5 text-sm bg-industrial-900/95">
+      <a href="#about" class="nav-link py-2 px-3 rounded hover:bg-industrial-800 text-slate-200">About Me</a>
+      <a href="#education" class="nav-link py-2 px-3 rounded hover:bg-industrial-800 text-slate-200">Education Timeline</a>
+      <a href="#skills" class="nav-link py-2 px-3 rounded hover:bg-industrial-800 text-slate-200">Technical Skills</a>
+      <a href="#projects" class="nav-link py-2 px-3 rounded hover:bg-industrial-800 text-slate-200">Featured Projects</a>
+      <a href="#practice" class="nav-link py-2 px-3 rounded hover:bg-industrial-800 text-slate-200">PLC Automation Practice</a>
+      <a href="#experience" class="nav-link py-2 px-3 rounded hover:bg-industrial-800 text-slate-200">Internship Experience</a>
+      <a href="#achievements" class="nav-link py-2 px-3 rounded hover:bg-industrial-800 text-slate-200">Achievements</a>
+      <a href="#resume" class="nav-link py-2 px-3 rounded hover:bg-industrial-800 text-slate-200">Resume &amp; CV</a>
+      
+      <div class="pt-2 border-t border-industrial-700/60 flex items-center justify-between px-1">
+        <span class="text-xs font-mono text-slate-400">Theme</span>
+        <button class="theme-toggle-btn px-3 py-1.5 rounded-lg bg-industrial-800 border border-industrial-600 text-xs font-mono flex items-center gap-2">
+          <span class="theme-toggle-icon"></span>
+          <span class="theme-toggle-label text-slate-300">Dark Mode</span>
+        </button>
+      </div>
+
+      <a href="#contact" class="btn-primary text-xs py-2 px-3 mt-1 text-center">Contact Me</a>
+    </div>
+  </header>
+
+  <!-- ================================================================
+       1. HERO SECTION
+       ================================================================ -->
+  <section id="hero" class="relative pt-32 pb-20 sm:pt-40 sm:pb-28 overflow-hidden tech-grid-bg">
+    <!-- Ambient Industrial Glows -->
+    <div class="absolute -top-32 left-1/4 w-96 h-96 bg-electric-600/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute top-1/2 right-10 w-80 h-80 bg-cyanic-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Hero Left Column: Headline, Bio, Buttons -->
+        <div class="lg:col-span-7">
+          
+          <!-- Recruiter Availability Badge -->
+          <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-electric-500/40 text-xs font-mono text-cyanic-400 mb-6 chip-glow">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 led-indicator"></span>
+            <span id="hero-availability">Open to Entry-Level Opportunities | Pune, India</span>
+          </div>
+
+          <!-- Prominent Name -->
+          <h1 class="text-4xl sm:text-6xl font-black text-white tracking-tight leading-none mb-3">
+            PRAJAKTA POL
+          </h1>
+
+          <!-- Headline -->
+          <h2 id="hero-headline" class="text-xl sm:text-2xl font-bold text-electric-400 mb-5">
+            Aspiring PLC &amp; Industrial Automation Engineer
+          </h2>
+
+          <!-- Supporting Text -->
+          <p id="hero-bio" class="text-base sm:text-lg text-slate-300 leading-relaxed mb-8 max-w-2xl font-normal">
+            Electronics and Telecommunication Engineering graduate with a foundation in PLC automation, industrial sensors, control systems, and embedded electronics. Passionate about solving real-world engineering problems and building reliable automation solutions.
+          </p>
+
+          <!-- 3 Prominent Required Buttons -->
+          <div class="flex flex-wrap items-center gap-4 mb-10">
+            <a href="#projects" class="btn-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+              <span>View My Projects</span>
+            </a>
+
+            <a href="resume/Prajakta_Pol_Resume.pdf" download="Prajakta_Pol_Resume.pdf" class="btn-secondary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span>Download Resume</span>
+            </a>
+
+            <a href="#contact" class="btn-accent">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>Contact Me</span>
+            </a>
+          </div>
+
+          <!-- Quick Credibility Badges -->
+          <div id="hero-badges" class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 border-t border-industrial-700/60">
+            <!-- Populated dynamically via app.js -->
+          </div>
+        </div>
+
+        <!-- Hero Right Column: Profile Photo Card -->
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="w-full max-w-sm relative">
+            <!-- Glowing technical border frame -->
+            <div class="absolute -inset-1.5 bg-gradient-to-r from-electric-600 to-cyanic-500 rounded-2xl blur-lg opacity-35"></div>
+            
+            <div class="relative glass-panel rounded-2xl overflow-hidden border border-industrial-600 p-2.5 shadow-2xl">
+              <div class="overflow-hidden rounded-xl aspect-[3/4] bg-slate-950 relative group">
+                <img 
+                  id="hero-profile-img" 
+                  src="assets/images/prajakta-photo.jpg" 
+                  alt="Prajakta Pol - Aspiring PLC & Industrial Automation Engineer" 
+                  class="w-full h-full object-cover object-top group-hover:scale-[1.03] transition-transform duration-500"
+                />
+                <!-- Subtle engineering badge watermark -->
+                <div class="absolute bottom-2 left-2 right-2 px-3 py-1.5 rounded-lg bg-slate-900/85 backdrop-blur-sm border border-slate-700/60 flex items-center justify-between text-[11px] font-mono">
+                  <span class="text-white font-bold">PRAJAKTA POL</span>
+                  <span class="text-cyanic-400">B.Tech E&amp;TC</span>
+                </div>
+              </div>
+              
+              <!-- Engineering Status Ribbon -->
+              <div class="p-3 bg-industrial-950/90 rounded-b-xl border-t border-industrial-700 flex items-center justify-between text-xs font-mono">
+                <span class="text-slate-400">PUNE / SOLAPUR</span>
+                <span class="text-emerald-400 font-bold flex items-center gap-1.5">
+                  <span class="w-2 h-2 rounded-full bg-emerald-400 led-indicator"></span> READY FOR INTERVIEWS
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       2. ABOUT ME SECTION
+       ================================================================ -->
+  <section id="about" class="py-20 bg-industrial-950/60 border-t border-industrial-700/50 reveal-on-scroll">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      
+      <!-- Section Header -->
+      <div class="mb-12">
+        <div class="text-xs font-mono font-bold uppercase tracking-widest text-electric-400 mb-2">01. Profile &amp; Background</div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">About Me</h2>
+        <div class="w-20 h-1 bg-gradient-to-r from-electric-500 to-cyanic-400 rounded mt-3"></div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+        
+        <!-- Left: Concise Professional Bio -->
+        <div class="lg:col-span-5 flex flex-col justify-between">
+          <div class="space-y-4">
+            <p id="about-summary" class="text-base sm:text-lg text-slate-200 leading-relaxed font-normal">
+              <!-- Rendered via app.js -->
+            </p>
+            <p id="about-detailed-bio" class="text-sm text-slate-300 leading-relaxed">
+              <!-- Rendered via app.js -->
+            </p>
+          </div>
+
+          <!-- Industrial Mindset Box -->
+          <div class="mt-6 p-5 rounded-xl glass-panel border border-industrial-700/80">
+            <h4 class="text-xs font-mono font-bold uppercase tracking-wider text-cyanic-400 mb-3 flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              Industrial Mindset &amp; Standards
+            </h4>
+            <ul id="about-mindset-list" class="space-y-2">
+              <!-- Rendered via app.js -->
+            </ul>
+          </div>
+        </div>
+
+        <!-- Right: Core Areas of Interest Grid -->
+        <div class="lg:col-span-7">
+          <h3 class="text-xs font-mono font-bold uppercase tracking-widest text-slate-400 mb-4">
+            Core Technical Interests
+          </h3>
+          <div id="about-interests-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <!-- Rendered dynamically via app.js -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       3. EDUCATION SECTION
+       ================================================================ -->
+  <section id="education" class="py-20 border-t border-industrial-700/50 reveal-on-scroll">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      
+      <!-- Section Header -->
+      <div class="mb-12">
+        <div class="text-xs font-mono font-bold uppercase tracking-widest text-electric-400 mb-2">02. Academic Credentials</div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Education &amp; Diploma Timeline</h2>
+        <div class="w-20 h-1 bg-gradient-to-r from-electric-500 to-cyanic-400 rounded mt-3"></div>
+      </div>
+
+      <!-- Education Timeline Container -->
+      <div id="education-timeline" class="max-w-4xl mx-auto">
+        <!-- Rendered dynamically via app.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================================================================
+       4. TECHNICAL SKILLS SECTION
+       ================================================================ -->
+  <section id="skills" class="py-20 bg-industrial-950/60 border-t border-industrial-700/50 reveal-on-scroll">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      
+      <!-- Section Header -->
+      <div class="mb-12">
+        <div class="text-xs font-mono font-bold uppercase tracking-widest text-electric-400 mb-2">03. Engineering Competencies</div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Technical Skills</h2>
+        <p class="text-sm text-slate-400 mt-1 max-w-2xl">
+          Practical skills acquired through specialized automation diploma training, engineering coursework, and laboratory implementations.
+        </p>
+        <div class="w-20 h-1 bg-gradient-to-r from-electric-500 to-cyanic-400 rounded mt-3"></div>
+      </div>
+
+      <!-- Skills Grid (4 Categories) -->
+      <div id="skills-categories-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Rendered dynamically via app.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================================================================
+       5. FEATURED PROJECTS SECTION
+       ================================================================ -->
+  <section id="projects" class="py-20 border-t border-industrial-700/50 reveal-on-scroll">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      
+      <!-- Section Header -->
+      <div class="mb-12">
+        <div class="text-xs font-mono font-bold uppercase tracking-widest text-electric-400 mb-2">04. Engineering Deliverables</div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Featured Projects</h2>
+        <p class="text-sm text-slate-400 mt-1 max-w-2xl">
+          Multi-sensor systems, AC voltage instrumentation, encrypted telemetry, and biomaterial research.
+        </p>
+        <div class="w-20 h-1 bg-gradient-to-r from-electric-500 to-cyanic-400 rounded mt-3"></div>
+      </div>
+
+      <!-- Projects Grid -->
+      <div id="featured-projects-grid" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Rendered dynamically via app.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================================================================
+       6. INDUSTRIAL AUTOMATION PRACTICE (PROJECT 5)
+       ================================================================ -->
+  <section id="practice" class="py-20 bg-industrial-950/70 border-t border-industrial-700/50 reveal-on-scroll">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      
+      <!-- Section Header -->
+      <div class="mb-8">
+        <div class="text-xs font-mono font-bold uppercase tracking-widest text-cyanic-400 mb-2">05. Specialized Training</div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Industrial Automation Practice</h2>
+        <div class="w-20 h-1 bg-gradient-to-r from-electric-500 to-cyanic-400 rounded mt-3"></div>
+      </div>
+
+      <!-- Transparency / Training Distinguisher Notice -->
+      <div class="p-4 rounded-xl bg-slate-900 border border-electric-500/30 mb-10 flex items-start gap-3">
+        <span class="text-cyanic-400 mt-0.5 shrink-0">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+        </span>
+        <p id="automation-notice-text" class="text-xs sm:text-sm text-slate-300 font-mono leading-relaxed">
+          <!-- Rendered via app.js -->
+        </p>
+      </div>
+
+      <!-- Interactive PLC Ladder Logic Simulation Workbench -->
+      <div class="mb-14 glass-panel rounded-2xl border border-electric-500/40 p-6 sm:p-8 shadow-2xl">
+        <div class="flex flex-wrap items-center justify-between gap-4 mb-6 pb-4 border-b border-industrial-700">
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="w-3 h-3 rounded-full bg-emerald-400 led-indicator"></span>
+              <span class="text-xs font-mono uppercase tracking-widest text-electric-400 font-bold">Interactive Recruiter Simulator</span>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-bold text-white mt-1">Live PLC Ladder Logic Workbench</h3>
+            <p class="text-xs text-slate-400 mt-1">Test standard IEC 61131-3 logic scan cycles in real time below.</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="px-2.5 py-1 rounded text-xs font-mono bg-industrial-950 text-slate-300 border border-industrial-700">Scan Cycle: 10ms</span>
+            <span class="px-2.5 py-1 rounded text-xs font-mono bg-emerald-950 text-emerald-400 border border-emerald-800">CPU: RUN</span>
+          </div>
+        </div>
+
+        <!-- Simulator Tabs / Workspaces Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          
+          <!-- Simulation 1: Motor DOL Starter -->
+          <div class="p-5 rounded-xl bg-industrial-900 border border-industrial-700 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-xs font-mono font-bold text-electric-400">CIRCUIT 1</span>
+                <span id="mtr-status-badge" class="px-2 py-0.5 rounded text-[11px] font-mono font-bold bg-slate-800 text-slate-400">STOPPED</span>
+              </div>
+              <h4 class="text-sm font-bold text-white mb-1">DOL Motor Starter &amp; Latch</h4>
+              <p class="text-xs text-slate-400 mb-4">Click and hold Start PB or release Stop PB to test latching circuit logic.</p>
+
+              <!-- Live Circuit Schematic Indicators -->
+              <div class="p-3 rounded-lg bg-industrial-950 border border-industrial-800 font-mono text-xs space-y-2 mb-4">
+                <div class="flex items-center justify-between">
+                  <span class="text-slate-400">[NO] Start PB (I0.0):</span>
+                  <span class="text-slate-200">Momentary</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-slate-400">[NC] Stop PB (I0.1):</span>
+                  <span class="text-emerald-400 font-bold">Closed (Normal)</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-slate-400">[NC] Overload (I0.2):</span>
+                  <span class="text-emerald-400 font-bold">Closed (Healthy)</span>
+                </div>
+                <div class="flex items-center justify-between pt-2 border-t border-industrial-800">
+                  <span class="text-electric-400 font-bold">Contactor Coil (Q0.0):</span>
+                  <div class="flex items-center gap-1.5">
+                    <span id="led-contactor" class="w-3.5 h-3.5 rounded-full bg-slate-700"></span>
+                    <span id="mtr-rpm-val" class="text-white font-bold">0 RPM</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Overload Trip Alert Banner -->
+              <div id="mtr-trip-banner" style="display: none;" class="p-2.5 rounded bg-red-950/80 border border-red-800 text-[11px] text-red-300 font-mono mb-4 text-center">
+                ⚠️ OVERLOAD RELAY TRIPPED! MOTOR LOCKED OUT.
+              </div>
+            </div>
+
+            <!-- Interactive Buttons for Recruiter -->
+            <div class="space-y-2 pt-2 border-t border-industrial-800">
+              <div class="grid grid-cols-2 gap-2">
+                <button id="sim-btn-start" class="py-2 px-3 rounded bg-emerald-700 hover:bg-emerald-600 active:scale-95 text-white font-mono text-xs font-bold transition-all shadow">
+                  [NO] Press Start PB
+                </button>
+                <button id="sim-btn-stop" class="py-2 px-3 rounded bg-red-700 hover:bg-red-600 active:scale-95 text-white font-mono text-xs font-bold transition-all shadow">
+                  [NC] Press Stop PB
+                </button>
+              </div>
+              <div class="grid grid-cols-2 gap-2">
+                <button id="sim-btn-trip" class="py-1.5 px-2 rounded bg-amber-900/60 hover:bg-amber-800 text-amber-300 font-mono text-[11px] border border-amber-700/60 transition-all">
+                  Simulate Overload
+                </button>
+                <button id="sim-btn-reset-trip" class="py-1.5 px-2 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 font-mono text-[11px] border border-slate-700 transition-all">
+                  Reset Overload
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Simulation 2: Timer On-Delay (TON) -->
+          <div class="p-5 rounded-xl bg-industrial-900 border border-industrial-700 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-xs font-mono font-bold text-electric-400">CIRCUIT 2</span>
+                <span class="px-2 py-0.5 rounded text-[11px] font-mono font-bold bg-sky-950 text-sky-400 border border-sky-800">TON TIMER</span>
+              </div>
+              <h4 class="text-sm font-bold text-white mb-1">Delayed Valve Actuation (TON)</h4>
+              <p class="text-xs text-slate-400 mb-4">Toggle cycle enable switch and watch the 3.0s timer accumulate before energizing Done bit.</p>
+
+              <!-- Progress & Values -->
+              <div class="p-3 rounded-lg bg-industrial-950 border border-industrial-800 font-mono text-xs space-y-3 mb-4">
+                <div class="flex items-center justify-between">
+                  <span class="text-slate-400">Timer Accumulator:</span>
+                  <span id="tmr-elapsed-val" class="text-cyanic-400 font-bold">0.0s / 3.0s</span>
+                </div>
+                
+                <!-- Progress bar -->
+                <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
+                  <div id="tmr-progress-bar" class="bg-gradient-to-r from-electric-500 to-cyanic-400 h-full w-0 transition-all duration-100"></div>
+                </div>
+
+                <div class="flex items-center justify-between pt-1">
+                  <span class="text-slate-400">Timer Done Bit (T4:0/DN):</span>
+                  <span id="led-timer-dn" class="w-3 h-3 rounded-full bg-slate-700"></span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-electric-400 font-bold">Solenoid Valve (Q0.1):</span>
+                  <span id="led-valve-q1" class="w-3.5 h-3.5 rounded-full bg-slate-700"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-2 border-t border-industrial-800">
+              <label class="flex items-center justify-between p-2.5 rounded-lg bg-industrial-950 border border-industrial-700 cursor-pointer hover:border-electric-500 transition-colors">
+                <span class="text-xs font-mono text-slate-200">Enable Cycle Switch (I0.3):</span>
+                <input id="sim-toggle-timer" type="checkbox" class="w-4 h-4 accent-sky-500 cursor-pointer" />
+              </label>
+            </div>
+          </div>
+
+          <!-- Simulation 3: Proximity Sensor & Counter (CTU) -->
+          <div class="p-5 rounded-xl bg-industrial-900 border border-industrial-700 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-xs font-mono font-bold text-electric-400">CIRCUIT 3</span>
+                <span class="px-2 py-0.5 rounded text-[11px] font-mono font-bold bg-cyan-950 text-cyan-400 border border-cyan-800">CTU COUNTER</span>
+              </div>
+              <h4 class="text-sm font-bold text-white mb-1">Part Counting &amp; Diverter</h4>
+              <p class="text-xs text-slate-400 mb-4">Pulse proximity sensor to count manufactured parts up to preset target (5 parts).</p>
+
+              <div class="p-3 rounded-lg bg-industrial-950 border border-industrial-800 font-mono text-xs space-y-2 mb-4">
+                <div class="flex items-center justify-between">
+                  <span class="text-slate-400">Prox Sensor (I0.4):</span>
+                  <div class="flex items-center gap-1.5">
+                    <span id="led-prox-sensor" class="w-3 h-3 rounded-full bg-slate-700"></span>
+                    <span class="text-slate-400 text-[10px]">Pulse</span>
+                  </div>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-slate-400">Accumulated Parts (CV):</span>
+                  <span id="cnt-val-display" class="text-electric-400 font-bold text-sm">0 / 5</span>
+                </div>
+                <div class="pt-2 border-t border-industrial-800 flex items-center justify-between">
+                  <span class="text-electric-400 font-bold">Diverter Arm (Q0.2):</span>
+                  <span id="led-diverter-q2" class="w-3.5 h-3.5 rounded-full bg-slate-700"></span>
+                </div>
+                <div id="diverter-status-text" class="text-[11px] text-slate-400 pt-1">
+                  ACCUMULATING PARTS (CONVEYOR RUNNING)
+                </div>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-2 pt-2 border-t border-industrial-800">
+              <button id="sim-btn-sensor-pulse" class="py-2 px-2.5 rounded bg-cyanic-600 hover:bg-cyanic-500 active:scale-95 text-white font-mono text-xs font-bold transition-all shadow">
+                Sensor Pulse +1
+              </button>
+              <button id="sim-btn-reset-counter" class="py-2 px-2.5 rounded bg-slate-800 hover:bg-slate-700 active:scale-95 text-slate-300 font-mono text-xs transition-all border border-slate-700">
+                Reset Batch
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Static Practice Cards Grid (Ladder Diagrams & Descriptions) -->
+      <div id="automation-practice-cards" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Rendered dynamically via app.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================================================================
+       7. INTERNSHIP & PRACTICAL EXPERIENCE
+       ================================================================ -->
+  <section id="experience" class="py-20 border-t border-industrial-700/50 reveal-on-scroll">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      
+      <!-- Section Header -->
+      <div class="mb-12">
+        <div class="text-xs font-mono font-bold uppercase tracking-widest text-electric-400 mb-2">06. Practical Exposure</div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Internship &amp; Industry Exposure</h2>
+        <p class="text-sm text-slate-400 mt-1 max-w-2xl">
+          Credible technical exposure records from national research and automation panel manufacturing environments.
+        </p>
+        <div class="w-20 h-1 bg-gradient-to-r from-electric-500 to-cyanic-400 rounded mt-3"></div>
+      </div>
+
+      <!-- Experience Cards Container -->
+      <div id="experience-container" class="space-y-8">
+        <!-- Rendered dynamically via app.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================================================================
+       8. ACHIEVEMENTS & RECOGNITION
+       ================================================================ -->
+  <section id="achievements" class="py-20 bg-industrial-950/60 border-t border-industrial-700/50 reveal-on-scroll">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      
+      <!-- Section Header -->
+      <div class="mb-12">
+        <div class="text-xs font-mono font-bold uppercase tracking-widest text-electric-400 mb-2">07. Honors &amp; Leadership</div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Achievements &amp; Recognition</h2>
+        <div class="w-20 h-1 bg-gradient-to-r from-electric-500 to-cyanic-400 rounded mt-3"></div>
+      </div>
+
+      <!-- Achievements Grid -->
+      <div id="achievements-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Rendered dynamically via app.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================================================================
+       9. DEDICATED RESUME SECTION
+       ================================================================ -->
+  <section id="resume" class="py-20 border-t border-industrial-700/50 reveal-on-scroll">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      
+      <!-- Section Header -->
+      <div class="mb-12">
+        <div class="text-xs font-mono font-bold uppercase tracking-widest text-electric-400 mb-2">08. Curriculum Vitae</div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Resume &amp; Credentials</h2>
+        <div class="w-20 h-1 bg-gradient-to-r from-electric-500 to-cyanic-400 rounded mt-3"></div>
+      </div>
+
+      <!-- Resume Preview & Download Card Container -->
+      <div id="resume-content-preview">
+        <!-- Rendered dynamically via app.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================================================================
+       10. CONTACT SECTION
+       ================================================================ -->
+  <section id="contact" class="py-20 bg-industrial-950/80 border-t border-industrial-700/50 reveal-on-scroll">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      
+      <!-- Section Header -->
+      <div class="mb-12 text-center max-w-2xl mx-auto">
+        <div class="text-xs font-mono font-bold uppercase tracking-widest text-electric-400 mb-2">09. Get in Touch</div>
+        <h2 id="contact-cta-heading" class="text-3xl sm:text-4xl font-extrabold text-white">
+          Let's Connect and Build Reliable Automation Solutions.
+        </h2>
+        <p id="contact-cta-subtitle" class="text-sm text-slate-300 mt-3 leading-relaxed">
+          <!-- Rendered via app.js -->
+        </p>
+        <div class="w-20 h-1 bg-gradient-to-r from-electric-500 to-cyanic-400 rounded mx-auto mt-4"></div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 max-w-5xl mx-auto">
+        
+        <!-- Left Column: Direct Contact Info & Social Placeholders -->
+        <div class="lg:col-span-5 space-y-4">
+          
+          <!-- Email Card -->
+          <div class="glass-panel p-5 rounded-xl border border-industrial-700">
+            <div class="text-xs font-mono text-slate-400 uppercase tracking-wider mb-1">Direct Email Address</div>
+            <a href="mailto:polprajakta07@gmail.com" class="text-base font-bold text-electric-400 hover:text-cyanic-300 font-mono break-all block mb-3">
+              polprajakta07@gmail.com
+            </a>
+            <button id="btn-copy-email" class="w-full py-2 px-3 rounded bg-industrial-900 hover:bg-industrial-800 text-xs font-mono text-slate-200 border border-industrial-600 transition-colors flex items-center justify-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <span>Copy Email Address</span>
+            </button>
+          </div>
+
+          <!-- Location Card -->
+          <div class="glass-panel p-5 rounded-xl border border-industrial-700">
+            <div class="text-xs font-mono text-slate-400 uppercase tracking-wider mb-1">Primary Job Location</div>
+            <div id="contact-location-text" class="text-sm font-bold text-white mb-1">
+              Pune / Solapur, Maharashtra, India
+            </div>
+            <p class="text-xs text-slate-400">
+              Open to relocate to Pune industrial zones (Chakan, Bhosari, Talwade, PCMC, Ranjangaon, Hinjawadi).
+            </p>
+          </div>
+
+          <!-- Professional Profiles (LinkedIn & GitHub Placeholders) -->
+          <div class="glass-panel p-5 rounded-xl border border-industrial-700">
+            <div class="text-xs font-mono text-slate-400 uppercase tracking-wider mb-2">Professional Profiles</div>
+            <div class="space-y-2">
+              <a 
+                id="contact-linkedin-link" 
+                href="https://www.linkedin.com/in/prajakta-pol-placeholder" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="p-2.5 rounded-lg bg-industrial-900 border border-industrial-700 hover:border-electric-500 text-xs font-mono text-slate-300 hover:text-electric-400 transition-all flex items-center justify-between"
+              >
+                <span class="flex items-center gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                  <span>LinkedIn Profile Placeholder</span>
+                </span>
+                <span class="text-[10px] text-slate-500">To be linked</span>
+              </a>
+
+              <a 
+                id="contact-github-link" 
+                href="https://github.com/prajaktapol-placeholder" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="p-2.5 rounded-lg bg-industrial-900 border border-industrial-700 hover:border-cyanic-500 text-xs font-mono text-slate-300 hover:text-cyanic-400 transition-all flex items-center justify-between"
+              >
+                <span class="flex items-center gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  <span>GitHub Profile Placeholder</span>
+                </span>
+                <span class="text-[10px] text-slate-500">To be linked</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Contact Message Form -->
+        <div class="lg:col-span-7">
+          <div class="glass-panel p-6 sm:p-8 rounded-xl border border-industrial-700">
+            <h3 class="text-lg font-bold text-white mb-2">Send an Opportunity / Message</h3>
+            <p class="text-xs text-slate-400 mb-6">Recruiters and hiring managers: please leave your details below.</p>
+
+            <form id="portfolio-contact-form" class="space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-mono text-slate-300 mb-1.5">Your Name / Company *</label>
+                  <input 
+                    type="text" 
+                    name="sender_name" 
+                    required 
+                    placeholder="e.g. Rahul Sharma (Talent Acquisition)"
+                    class="w-full px-3.5 py-2.5 rounded-lg bg-industrial-900 border border-industrial-600 focus:border-electric-400 focus:outline-none text-sm text-white font-sans"
+                  />
+                </div>
+                <div>
+                  <label class="block text-xs font-mono text-slate-300 mb-1.5">Your Work Email *</label>
+                  <input 
+                    type="email" 
+                    name="sender_email" 
+                    required 
+                    placeholder="e.g. r.sharma@automation-company.com"
+                    class="w-full px-3.5 py-2.5 rounded-lg bg-industrial-900 border border-industrial-600 focus:border-electric-400 focus:outline-none text-sm text-white font-sans"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-mono text-slate-300 mb-1.5">Subject</label>
+                <input 
+                  type="text" 
+                  name="subject" 
+                  value="Entry-Level PLC Automation Engineer Role — Pune"
+                  class="w-full px-3.5 py-2.5 rounded-lg bg-industrial-900 border border-industrial-600 focus:border-electric-400 focus:outline-none text-sm text-white font-sans"
+                />
+              </div>
+
+              <div>
+                <label class="block text-xs font-mono text-slate-300 mb-1.5">Message / Job Description *</label>
+                <textarea 
+                  name="message" 
+                  rows="4" 
+                  required 
+                  placeholder="Hi Prajakta, we reviewed your automation portfolio and would like to invite you for an interview regarding an Automation Engineer position in Pune..."
+                  class="w-full px-3.5 py-2.5 rounded-lg bg-industrial-900 border border-industrial-600 focus:border-electric-400 focus:outline-none text-sm text-white font-sans"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="w-full btn-primary py-3 font-bold text-sm">
+                <span>Send Message to Prajakta</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       FOOTER
+       ================================================================ -->
+  <footer class="py-10 border-t border-industrial-800 bg-industrial-950 text-xs text-slate-500 font-mono">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 flex flex-wrap items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <div class="w-7 h-7 rounded bg-industrial-900 border border-industrial-700 flex items-center justify-center text-electric-400 font-bold">
+          PP
+        </div>
+        <span>&copy; Prajakta Pol. All Rights Reserved.</span>
+      </div>
+      <div class="text-slate-400">
+        Electronics &amp; Telecommunication Engineering &bull; Industrial Automation (PGDIA)
+      </div>
+      <div>
+        Pune, Maharashtra, India
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================================================================
+       MODAL 1: PROJECT TECHNICAL DETAILS
+       ================================================================ -->
+  <div id="project-details-modal" class="modal-backdrop">
+    <div class="modal-content">
+      <div id="project-modal-body">
+        <!-- Injected dynamically via app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ================================================================
+       MODAL 2: FULLSCREEN RESUME PREVIEW & PRINT
+       ================================================================ -->
+  <div id="resume-preview-modal" class="modal-backdrop">
+    <div class="modal-content max-w-4xl max-h-[95vh]">
+      <div class="p-6 sm:p-8">
+        
+        <!-- Modal Controls -->
+        <div class="flex items-center justify-between gap-3 mb-6 pb-4 border-b border-industrial-700 no-print">
+          <div>
+            <h3 class="text-xl font-bold text-white">Curriculum Vitae Preview</h3>
+            <p class="text-xs font-mono text-slate-400">Prajakta Pol &bull; Aspiring Automation Engineer</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <button onclick="window.print()" class="btn-secondary text-xs py-1.5 px-3">
+              Print / Save PDF
+            </button>
+            <a href="resume/Prajakta_Pol_Resume.pdf" download="Prajakta_Pol_Resume.pdf" class="btn-primary text-xs py-1.5 px-3">
+              Download File
+            </a>
+            <button data-close-modal class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 flex items-center justify-center">
+              ✕
+            </button>
+          </div>
+        </div>
+
+        <!-- Rendered Resume Document -->
+        <div id="resume-print-modal-content" class="bg-white text-slate-900 p-6 sm:p-10 rounded-lg shadow font-sans text-xs leading-relaxed">
+          
+          <!-- Resume Header -->
+          <div class="border-b-2 border-slate-900 pb-3 mb-4 flex justify-between items-start gap-4">
+            <div>
+              <h1 class="text-2xl font-black text-slate-900 tracking-tight uppercase">PRAJAKTA POL</h1>
+              <p class="text-xs font-bold text-sky-800 font-mono mt-0.5">Aspiring PLC &amp; Industrial Automation Engineer</p>
+              <p class="text-[11px] text-slate-600 mt-1">
+                Pune / Solapur, Maharashtra, India &bull; Email: <span class="font-bold text-slate-900">polprajakta07@gmail.com</span>
+              </p>
+              <span class="inline-block mt-2 px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 font-mono font-bold text-[10px]">
+                Open for Entry-Level Roles | Pune, India
+              </span>
+            </div>
+            <div class="shrink-0 flex items-center">
+              <img 
+                src="assets/images/prajakta-photo.jpg" 
+                alt="Prajakta Pol Portrait" 
+                class="w-16 h-20 sm:w-20 sm:h-24 object-cover object-top rounded border border-slate-300 shadow-sm"
+              />
+            </div>
+          </div>
+
+          <!-- Career Objective -->
+          <div class="mb-4">
+            <h2 class="text-xs font-black uppercase text-slate-900 tracking-wider border-b border-slate-300 pb-1 mb-1.5">Career Objective</h2>
+            <p class="text-slate-700 text-[11px]">
+              Electronics and Telecommunication Engineering graduate with a strong foundation in PLC automation, industrial sensors, control systems, and embedded electronics. Passionate about solving real-world engineering problems and building reliable automation solutions. Eager to contribute to entry-level Automation Engineer and Control Systems Engineer roles in Pune.
+            </p>
+          </div>
+
+          <!-- Education -->
+          <div class="mb-4">
+            <h2 class="text-xs font-black uppercase text-slate-900 tracking-wider border-b border-slate-300 pb-1 mb-1.5">Education</h2>
+            <div class="space-y-2 text-[11px]">
+              <div>
+                <div class="flex justify-between font-bold text-slate-900">
+                  <span>Bachelor of Technology (B.Tech) — Electronics &amp; Telecommunication Engineering</span>
+                  <span>Year: 2026</span>
+                </div>
+                <div class="flex justify-between text-slate-600">
+                  <span>N. B. Navale Sinhgad College of Engineering, Kegaon, Solapur</span>
+                  <span class="font-bold text-sky-900">CGPA: 8.25 / 10</span>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between font-bold text-slate-900">
+                  <span>Post Graduate Diploma in Industrial Automation (PGDIA)</span>
+                  <span class="text-emerald-700 font-bold">Status: Completed</span>
+                </div>
+                <div class="text-slate-600">
+                  Training exposure: Siemens PLC, Allen-Bradley PLC, Industrial Sensors, and Automation Fundamentals.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Technical Skills -->
+          <div class="mb-4">
+            <h2 class="text-xs font-black uppercase text-slate-900 tracking-wider border-b border-slate-300 pb-1 mb-1.5">Technical Skills</h2>
+            <div class="grid grid-cols-2 gap-x-4 gap-y-1 text-[11px] text-slate-700">
+              <div><strong>PLC &amp; Automation:</strong> PLC fundamentals, Ladder Logic, Siemens PLC, Allen-Bradley PLC, Industrial Sensors, HMI/SCADA fundamentals, PROFINET &amp; industrial communication, Control system troubleshooting.</div>
+              <div><strong>Electronics &amp; Instrumentation:</strong> Analog &amp; digital fundamentals, Sensors &amp; signal interfacing, Relays, Contactors, SMPS, MCB, Overload relays, Hardware testing &amp; troubleshooting.</div>
+              <div><strong>Embedded &amp; IoT:</strong> ESP32, Sensor integration, Wi-Fi IoT applications, ThingSpeak, Telegram bot integration.</div>
+              <div><strong>Tools &amp; Programming:</strong> PLC simulation software, Basic C programming, Technical documentation &amp; testing.</div>
+            </div>
+          </div>
+
+          <!-- Internships & Practical Exposure -->
+          <div class="mb-4">
+            <h2 class="text-xs font-black uppercase text-slate-900 tracking-wider border-b border-slate-300 pb-1 mb-1.5">Internship &amp; Practical Experience</h2>
+            <div class="space-y-2 text-[11px]">
+              <div>
+                <div class="flex justify-between font-bold text-slate-900">
+                  <span>DRDO Internship — Instrumentation &amp; Electronics Exposure</span>
+                  <span>2026</span>
+                </div>
+                <p class="text-slate-700">
+                  Technical exposure to nuclear &amp; radiation instrumentation including Gamma Ray Spectrometer, dosimeter, RF connectors, radiation-hardened connectors, and Cobalt-60 gamma radiation source chamber protocols.
+                </p>
+              </div>
+
+              <div>
+                <div class="flex justify-between font-bold text-slate-900">
+                  <span>Laxmi Controls, Solapur — Industrial Automation Intern</span>
+                  <span>2025</span>
+                </div>
+                <p class="text-slate-700">
+                  Hands-on exposure to industrial electrical control panel assembly, DIN rail hardware, 3-phase MCBs, 24VDC SMPS, contactors, thermal overload relays, and ferrule wiring schematics.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Key Projects -->
+          <div class="mb-4">
+            <h2 class="text-xs font-black uppercase text-slate-900 tracking-wider border-b border-slate-300 pb-1 mb-1.5">Key Projects</h2>
+            <div class="space-y-1.5 text-[11px] text-slate-700">
+              <div>
+                <strong class="text-slate-900">Water Quality Monitoring System:</strong> IoT-based multi-sensor platform using ESP32, TDS, pH, turbidity, and temperature probes with ThingSpeak cloud telemetry.
+              </div>
+              <div>
+                <strong class="text-slate-900">Smart Energy Meter:</strong> ESP32-based single-phase AC voltage monitoring with ZMPT101B potential transformer isolation and automated Telegram alerts.
+              </div>
+              <div>
+                <strong class="text-slate-900">Smart Encrypted Walkie-Talkie:</strong> Peer-to-peer wireless voice prototype using ESP32, ESP-NOW protocol, I2S digital microphone, and AES encryption.
+              </div>
+              <div>
+                <strong class="text-slate-900">Silk Fibroin Membrane Water Filter:</strong> Experimental biomaterial membrane synthesis research for microfiltration and heavy metal adsorption.
+              </div>
+            </div>
+          </div>
+
+          <!-- Honors & Awards -->
+          <div>
+            <h2 class="text-xs font-black uppercase text-slate-900 tracking-wider border-b border-slate-300 pb-1 mb-1.5">Honors &amp; Recognition</h2>
+            <ul class="list-disc list-inside text-[11px] text-slate-700 space-y-0.5">
+              <li>Best Oral Presentation — 2nd International Conference on Silk Fibroin and Sericulture Resources</li>
+              <li>Best Research Paper — NCRTC 2025</li>
+              <li>First Rank — Ideathon Spirit 2K25, SVERI</li>
+              <li>Participant — Prometeo'25, Indian Institute of Technology (IIT) Jodhpur</li>
+              <li>Training and Placement (T&amp;P) Student Volunteer — Recruitment drive coordination</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ================================================================
+       MODAL 3: CONTACT FORM CONFIRMATION
+       ================================================================ -->
+  <div id="contact-confirm-modal" class="modal-backdrop">
+    <div class="modal-content max-w-md p-6 text-center">
+      <div class="w-12 h-12 rounded-full bg-emerald-950 text-emerald-400 border border-emerald-700 flex items-center justify-center mx-auto mb-4">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+      </div>
+      <h3 class="text-lg font-bold text-white mb-2">Message Prepared Successfully!</h3>
+      <p class="text-xs text-slate-300 mb-6 leading-relaxed">
+        Thank you for contacting me. You can also send this directly via your default email client right now to ensure instant delivery.
+      </p>
+      <div class="flex flex-col gap-2">
+        <a id="btn-open-email-client" href="mailto:polprajakta07@gmail.com" class="btn-primary text-xs py-2.5">
+          Open Email Client (polprajakta07@gmail.com)
+        </a>
+        <button data-close-modal class="btn-secondary text-xs py-2">
+          Done
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/ladder-sim.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
